@@ -1,4 +1,4 @@
-name: Test
+name: Test Local
 on: [workflow_dispatch]
 
 jobs:
@@ -9,7 +9,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Licensebat
-        uses: licensebat/licensebat-action@v1
+        uses: ./
         with:
           dependency-file-path: 'test/package-lock.json'
           licrc-path: 'test/.licrc'
