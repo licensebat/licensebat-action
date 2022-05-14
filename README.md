@@ -16,7 +16,8 @@ The action will fail if it finds an invalid license.
 
 ## Example usage
 
+```bash
 uses: actions/licensebat@v1
 with:
   dependency-file-path: 'package-lock.json'
-  
+```
