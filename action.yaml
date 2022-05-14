@@ -1,4 +1,4 @@
-name: "licensebat"
+name: "Licensebat"
 description: "Validate the licenses of your project's dependencies by using Licensebat's open-source CLI"
 author: "Licensebat Dev Team <engineering@licensebat.com>"
 
