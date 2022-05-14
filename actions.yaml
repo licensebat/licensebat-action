@@ -1,0 +1,27 @@
+name: "licensebat"
+description: "Validate the licenses of your project's dependencies by using Licensebat's open-source CLI"
+author: "Licensebat Dev Team <engineering@licensebat.com>"
+
+branding:
+  icon: 'layers'  
+  color: 'yellow'
+
+inputs:
+  dependency-file-path:
+    description: "Dependency file path"
+    required: true
+    default: ""
+  licrc-path:
+    description: ".licrc path"
+    required: false
+    default: ".licrc"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"
+  args:
+    - -d
+    - ${{ inputs.dependency-file-path }}
+    - -l
+    - ${{ inputs.licrc-path }}
+
