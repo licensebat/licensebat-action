@@ -1,0 +1,12 @@
+on: [workflow_dispatch]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Test currently published version
+    steps:
+      - name: Licensebat
+        uses: licensebat/licensebat-action@v1
+        with:
+          dependency-file-path: 'test/package-lock.json'
+          licrc-path: 'test/.licrc'
