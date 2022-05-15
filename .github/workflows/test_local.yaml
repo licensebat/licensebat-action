@@ -21,3 +21,5 @@ jobs:
         with:
           dependency-file-path: 'test/package-lock.json'
           licrc-path: 'test/.licrc'
+      - name: Adding markdown
+        run: echo '### Hello world! :rocket:' >> $GITHUB_STEP_SUMMARY
