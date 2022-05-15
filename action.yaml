@@ -24,3 +24,4 @@ runs:
     - ${{ inputs.dependency-file-path }}
     - -l
     - ${{ inputs.licrc-path }}
+    - -f md
