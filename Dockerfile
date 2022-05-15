@@ -6,7 +6,7 @@ ENV cli_version="v0.12.0"
 RUN set -eux; \
     apt update; \
     apt -y install curl; \
-    curl --silent -L https://github.com/licensebat/licensebat/releases/download/v0.11.0/licensebat_linux.zip | gzip -d >> licensebat;
+    curl --silent -L https://github.com/licensebat/licensebat/releases/download/${cli_version}/licensebat_linux.zip | gzip -d >> licensebat;
 
 RUN chmod +x licensebat; \
     mv licensebat /usr/bin/licensebat;
