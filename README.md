@@ -4,6 +4,10 @@ This GitHub action allows you to use Licensebat to check the that the licenses o
 
 The action will fail if it finds an invalid license.
 
+Note that this action uses [job summaries](https://github.blog/2022-05-09-supercharging-github-actions-with-job-summaries/) to report the results of the licenses check.
+
+![job summary](https://user-images.githubusercontent.com/696981/168478953-17dfb662-006e-4f30-81fe-e6b61ba8f5e4.png)
+
 ## Inputs
 
 ## `dependency-file-path`
