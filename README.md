@@ -1,6 +1,6 @@
 # Licensebat GitHub Action
 
-This GitHub action allows you to use Licensebat to check the that the licenses of your project's dependencies are valid according to your licensing policy.
+This GitHub action allows you to use Licensebat to check that the licenses of your project's dependencies are valid according to your licensing policy.
 
 The action will fail if it finds an invalid license.
 
