@@ -1,6 +1,6 @@
 # Licensebat GitHub Action
 
-This GitHub action allows you to use Licensebat to check that the licenses of your project's dependencies are valid according to your licensing policy.
+This GitHub action allows you to use [Licensebat](https://docs.rs/licensebat-cli) to check that the licenses of your project's dependencies are valid according to your licensing policy.
 
 The action will fail if it finds an invalid license.
 
@@ -17,6 +17,8 @@ Note that this action uses [job summaries](https://github.blog/2022-05-09-superc
 ## `licrc-path`
 
 **Optional** `.licrc` file path.  Default `".licrc"`.
+
+[Learn more about the .licrc file](https://docs.rs/licensebat-cli/latest/licensebat_cli/#the-licrc-file).
 
 ## Example usage
 
