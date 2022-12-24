@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM ubuntu:20.04
 
-ENV cli_version="v0.12.0"
+ENV cli_version="v0.15.0"
 
 RUN set -eux; \
     apt update; \
@@ -13,6 +13,8 @@ RUN chmod +x licensebat; \
 
 # Copies your code file from your action repository to the filesystem path `/` of the container
 COPY entrypoint.sh /entrypoint.sh
+
+RUN chmod +x /entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
 ENTRYPOINT ["/entrypoint.sh"]
