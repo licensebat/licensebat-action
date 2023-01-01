@@ -1,7 +1,7 @@
 # Container image that runs your code
 FROM ubuntu:20.04
 
-ENV cli_version="v0.16.0"
+ENV cli_version="v0.18.0"
 
 RUN set -eux; \
     apt update; \
